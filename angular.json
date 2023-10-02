@@ -19,7 +19,10 @@
                         "tsConfig": "tsconfig.app.json",
                         "assets": ["src/favicon.ico", "src/assets"],
                         "polyfills": ["zone.js"],
-                        "styles": ["src/styles.css"],
+                        "styles": [
+                            "@angular/material/prebuilt-themes/indigo-pink.css",
+                            "src/styles.css"
+                        ],
                         "scripts": []
                     },
                     "configurations": {
@@ -79,7 +82,10 @@
                         "polyfills": ["zone.js", "zone.js/testing"],
                         "tsConfig": "tsconfig.spec.json",
                         "assets": ["src/favicon.ico", "src/assets"],
-                        "styles": ["src/styles.css"],
+                        "styles": [
+                            "@angular/material/prebuilt-themes/indigo-pink.css",
+                            "src/styles.css"
+                        ],
                         "scripts": []
                     }
                 },
@@ -93,6 +99,7 @@
         }
     },
     "cli": {
-        "schematicCollections": ["@angular-eslint/schematics"]
+        "schematicCollections": ["@angular-eslint/schematics"],
+        "analytics": "1fe872ef-735d-42ed-aa0b-e2259d9a353b"
     }
 }
